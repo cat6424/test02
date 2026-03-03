@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{color: #333;}
+
+.header{max-width: 1180px; height: 120px; margin: 0 auto;width: 95%;}
+.gnb{display: flex;justify-content: flex-end;height: 50px;align-items: center;font-size: 13px ;color: #666;margin-right: 22px;}
+.gnb>li{margin: 0 10px;}
+.wrap{display: flex;justify-content: space-between;height: 70px;align-items: flex-end;}
+.logo{line-height: 70px;font-weight: 900;font-size: 30px;color: #442f00;}
+.menu{display: flex;}
+.menu>li{line-height: 55px;}
+.menu>li>a{display: block;padding: 3px 30px;transition: all 0.3s;}
+.menu>li>a:hover{background-color: #442f00;color: #fff;}
+
+.main{height: calc(100vh - 120px);position: relative;background-color: black;}
+.main>video{width: 100%;height: 100%;display: block;object-fit: cover;opacity: 0.4;}
+.main_tatle{position: absolute;top: 30%;max-width: 1180px; left: 0; right: 0; margin: auto; color: #fff;width: 95%;}
+.main_tatle>h1{font-size: 80px;font-weight: bold;}
+.main_tatle>p{color: #999;font-size: 14px;}
+.main_tatle>a{margin-top: 50px;display: block;border: 1px solid #ddd;width: 30%;line-height: 30px;font-size: 12px; text-align: center;transition: all 0.5s;}
+.main_tatle>a:hover{background-color:  #442f00;color: #fff;} 
+
+.popmenu{position:absolute;z-index: 5; width:90px;height: 250px;background-color: rgba(255, 255, 255, 0.6);right: 5px;top: 5px;border-radius: 10px;}
+.popmenu>a{display: flex;flex-direction: column;align-items: center;margin-top: 40px;}
+.popmenu>a>img{width: 30px;height: 30px;}
+
+.contents{width: 95%;max-width: 1180px;margin: 200px auto;}
+.contents>h2{text-align: center;margin-bottom: 20px;margin-top: 30px;}
+.news{display: flex;margin-top: 50px;justify-content: space-between;}
+.news>li{width: 20%;}
+.news>li>a{display: block;}
+.news>li>a img{width: 100%;height: 150px;}
+.news>li>a:hover img{opacity: 0.6;}
+.news>li>a h5{margin: 5px 0;}
+.news>li>a p{font-size: 10px;}
+
+.news_1{display: flex;align-items: center;}
+.news_1>li{margin-left:30px}
+.news_1>li>a img{width: 150%;height: 300px;}
+
+.footer{background-color:#442f00;color: #999; padding: 100px 0;}
+.footer .logo{filter: grayscale(100%);}
+.inner{width: 93%;max-width: 1180px;margin: 0 auto;}
+.f_top{display: flex;justify-content: space-between;align-items: center; border-bottom: 1px solid #999; }
+.f_menu{display: flex;}
+.f_menu>li{margin-left: 15px;font-weight: 500;}
+.copy{padding-top: 20px;font-size: 12px;}
+
+
+
+@media all and (max-width:1024px){
+.header{height: 70px;width: 100%;padding: 0 2.5%;box-sizing: border-box;background-color: rgba(255, 255, 255, 0.7);position: fixed;z-index: 10;}
+.gnb,.menu{display: none;}
+.m_btn{width: 70px;height: 70px;}/*햄버거버튼만드는법 m_btn 3줄*/
+.m_btn{display: flex;flex-direction: column;justify-content: center;align-items: center;background: none;}
+.m_btn>span{width: 30px;border-top: 3px solid #666;margin: 3px 0;}
+
+.m_nav{position: absolute;top: 70px;background-color: rgba(255, 255, 255, 0.6);width: 100%;left: 0;}
+.m_menu>li>a{display: block;line-height: 40px;text-align: center;border-bottom: 1px solid #ddd;}
+.m_gnb{display: flex;flex-wrap: wrap;justify-content: space-evenly;border-bottom: 1px solid #ddd;}
+.m_gnb>li>a{display: block;line-height: 40px;padding: 0 15px;}
+
+.main{height: calc(100vh - 70px);top: 70px;}
+.main_tatle{text-align: center;}
+.main_tatle>a{margin-left: auto;margin-right: auto;}
+
+.news{flex-wrap: wrap;justify-content: space-evenly;}
+.news>li{width: 45%;margin-bottom: 30px;}
+}
+
+@media all and (max-width:560px){
+.news>li{width: 90%;margin-bottom: 50px;}
+.news>li>a>img{height: 200px;}
+.footer{padding: 50px 0;}
+.f_top{flex-direction: column;padding-bottom: 20px;}
+.copy{text-align: center;}
+}
+
+@media all and (min-width:1025px){
+.mobile{display: none;} 
+}
+
+
