@@ -39,7 +39,7 @@ body{color: #333;}
 .news_1>li>a img{width: 100%;height: 300px;}
 
 .footer{background-color:#442f00;color: #999; padding: 100px 0;}
-.footer .logo{filter: grayscale(100%);}
+.footer .logo{color: #999;}
 .inner{width: 93%;max-width: 1180px;margin: 0 auto;}
 .f_top{display: flex;justify-content: space-between;align-items: center; border-bottom: 1px solid #999; }
 .f_menu{display: flex;}
@@ -80,6 +80,5 @@ body{color: #333;}
 @media all and (min-width:1025px){
 .mobile{display: none;} 
 }
-
 
 
